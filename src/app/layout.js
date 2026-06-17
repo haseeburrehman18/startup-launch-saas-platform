@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="bg-gray-100 antialiased [--font-geist-sans:Arial,Helvetica,sans-serif] [--font-geist-mono:'Courier_New',monospace]">
+        className=" bg-gray-100 antialiased [--font-geist-sans:Arial,Helvetica,sans-serif] [--font-geist-mono:'Courier_New',monospace]">
         {children}
         <Footer />
       </body>
