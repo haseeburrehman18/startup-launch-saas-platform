@@ -17,7 +17,7 @@ function Targetcustomer({title,s_age,e_age,s_budget,e_budget,trait,painpointdesc
                 <div className='font-semibold text-[13px] text-gray-700'>Key Traits:</div>
                 <div className='flex gap-4 flex-wrap'>
                     {trait.map((item,idx)=>(
-                                             <span className='text-[12px] rounded-xl font-semibold py-0.5 px-1.5 bg-[#F0FDFA] text-[#3B8E88]'>{item}</span>
+                                             <span key={idx} className='text-[12px] rounded-xl font-semibold py-0.5 px-1.5 bg-[#F0FDFA] text-[#3B8E88]'>{item}</span>
 
                     ))}
                 </div>
