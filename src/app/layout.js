@@ -1,6 +1,7 @@
 import "./globals.css";
 
 import Footer from "../components/footer";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: "Create Next App",
@@ -18,6 +19,7 @@ export default function RootLayout({
         className=" bg-gray-100 antialiased [--font-geist-sans:Arial,Helvetica,sans-serif] [--font-geist-mono:'Courier_New',monospace]">
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

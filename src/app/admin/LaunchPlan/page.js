@@ -17,8 +17,6 @@ function page() {
     return (
         <div className='p-5 bg-gray-100 min-h-screen'>
             <div className=''>
-                <h1 className='my-3 text-2xl font-bold'>Launch Plan</h1>
-                <p className='text-sm text-gray-500 mb-6'>Your complete roadmap from pre-launch to first 30 days</p>
                 <div className='p-5 border-3 border-[#BDF9EE] rounded-2xl bg-[#EEFDFC] flex justify-between items-center'>
                     <div>
                         <h1 className='text-2xl font-bold'>Launch Date</h1>

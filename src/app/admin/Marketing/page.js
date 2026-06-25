@@ -14,8 +14,6 @@ import { MdOutlineContentPasteSearch, MdOutlineMail } from 'react-icons/md'
 function page() {
     return (
         <div className='p-5 min-h-screen'>
-            <h1 className='font-bold text-2xl'>Marketing Strategy</h1>
-            <p className='text-sm text-gray-500 font-semibold my-1'>Complete marketing plan to launch and grow your startup</p>
             <div className='my-3 p-4 rounded-2xl bg-white'>
                 <h1 className='font-bold mb-4 '>Recommended Marketing Channels</h1>
                 <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>

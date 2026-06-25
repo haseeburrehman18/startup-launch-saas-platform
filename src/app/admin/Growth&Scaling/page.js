@@ -8,10 +8,6 @@ import Scalingbyphases from '../../../components/scalingbyphases'
 function page() {
   return (
     <div className='p-5 bg-gray-100 min-h-screen'>
-      <div className=''>
-        <h1 className='font-bold text-2xl'>Growth & Scaling</h1>
-        <p className='text-sm text-gray-500 my-2'>Strategic plan to scale from startup to market leader</p>
-      </div>
       <div className='rounded-2xl border-2 bg-[#FBF4FD] p-5 my-5 border-[#EDDCFF]'>
         <h1 className='font-bold text-xl my-2'>3-Year Growth Trajectory</h1>
         <div className='grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4'>
