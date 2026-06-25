@@ -66,14 +66,7 @@ function Page() {
 
   return (
     <div className="min-h-screen w-full bg-gray-50 p-5 sm:p-8 ">
-      <div className="flex justify-between items-center mb-8 flex-wrap">
-        <div>
-          <h2 className="text-gray-900 text-3xl font-bold">Brand & Design </h2>
-          <p className="text-gray-600 mt-2">
-            Your complete brand identity package
-          </p>
-        </div>
-
+      <div className="flex justify-end items-center mb-8 flex-wrap">
         <div className="flex md:block justify-end items-end mt-7 sm:mt-0 w-full md:w-auto  ">
           <button className="cursor-pointer  bg-gradient-to-r p-4 gap-3 from-teal-500 to-cyan-500 rounded-2xl font-semibold text-white flex justify-center items-center">
             <FaDownload />
@@ -197,7 +190,6 @@ function Page() {
           </div>
         </CardContent>
       </Card>
-
       <Card className={"mt-4 mb-6  py-6 px-3 sm:p-6 rounded-2xl"}>
         <CardHeader>
           <CardTitle className={"text-xl whitespace-nowrap font-bold text-gray-900 mb-3 "}>

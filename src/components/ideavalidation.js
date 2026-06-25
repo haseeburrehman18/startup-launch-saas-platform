@@ -6,10 +6,6 @@ import { RiGroupLine } from 'react-icons/ri'
 function Ideavalidation() {
     return (
         <div className='p-5'>
-            <div className='text-2xl font-bold'>
-                Idea Validation
-            </div>
-            <div className='text-gray-500 py-1 pb-5 text-sm'>AI-powered market research and validation analysis</div>
             <div className='p-5 border-3 border-[#BDF9EE] rounded-2xl bg-[#EEFDFC] flex justify-between'>
                 <div>
                     <h1 className='text-2xl font-bold'>Validation Verdict</h1>

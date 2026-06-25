@@ -6,7 +6,7 @@ function Websitemaincomponent() {
     <div className='rounded-4xl border bg-white'>
         <div className='flex gap-2'>
             <div className='w-[30%]'>
-                <img src={"/pic.png"}></img>
+                <img src={"/images/pic.png"}></img>
             </div>
             <div className='w-[70%] p-5 ml-2'>
                 <div className='flex items-center justify-between'>

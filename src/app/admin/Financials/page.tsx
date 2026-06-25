@@ -141,11 +141,7 @@ function page() {
   )
   return (
     <div className='min-h-screen p-5'>
-      <div className='flex items-center justify-between'>
-        <div >
-          <h1 className='text-3xl font-bold mb-1.5'>Financial Plan</h1>
-          <p className='text-sm font-semibold text-gray-400'>Revenue projections and financial analysis</p>
-        </div>
+      <div className='flex items-center justify-end'>
         <div className=''>
           <button className='py-3 px-5 flex justify-center gap-2 items-center rounded-xl text-white bg-[#11B8AF]'>
             <div className='font-bold text-md'>

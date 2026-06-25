@@ -170,75 +170,95 @@ function page() {
             </div>
             <div className='rounded-2xl bg-white p-4'>
                 <h1 className='font-bold'>Launch Day Schedule</h1>
-                <div className='flex gap-2'>
-                    <div className='w-[7%] flex flex-col items-center justify-end'>
-                        <div className='rounded-lg py-1 px-2 bg-[#F0FDFA] text-[#177D82] font-semibold mt-6 mb-14'>8:00 AM</div>
-                        <div className='rounded-lg py-1 px-2 bg-[#F0FDFA] text-[#177D82] font-semibold mb-14'>9:00 AM</div>
-                        <div className='rounded-lg py-1 px-2 bg-[#F0FDFA] text-[#177D82] font-semibold mb-14'>10:00 AM</div>
-                        <div className='rounded-lg py-1 px-2 bg-[#F0FDFA] text-[#177D82] font-semibold mb-14'>11:00 AM</div>
-                        <div className='rounded-lg py-1 px-2 bg-[#F0FDFA] text-[#177D82] font-semibold mb-14'>12:00 AM</div>
-                        <div className='rounded-lg py-1 px-2 bg-[#F0FDFA] text-[#177D82] font-semibold mb-14'>02:00 PM</div>
-                        <div className='rounded-lg py-1 px-2 bg-[#F0FDFA] text-[#177D82] font-semibold mb-14'>04:00 PM</div>
-                        <div className='rounded-lg py-1 px-2 bg-[#F0FDFA] text-[#177D82] font-semibold mb-14'>06:00 PM</div>
-                        <div className='rounded-lg py-1 px-2 bg-[#F0FDFA] text-[#177D82] font-semibold mb-14'>08:00 PM</div>
+
+
+                <div className='flex  items-center justify-start gap-4'>
+
+                    <div className='flex items-center justify-center '>                   
+                             <div className='whitespace-nowrap rounded-lg py-1 px-2 bg-[#F0FDFA] text-[#177D82] font-semibold mt-6 mb-14'>8:00 AM</div>
+
                     </div>
-                    <div className='w-[93%] flex flex-col justify-start'>
-                        <div className='rounded-2xl bg-[#F9FAFB] p-3 font-semibold mt-6 mb-3'>
-                            <div>
+                    <div className='flex justify-center items-center w-full'>
+                        <div className='rounded-2xl w-full bg-[#F9FAFB] p-3 font-semibold mt-6 mb-3'>
+                            <div >
                                 <h1 className='font-bold text-[#433d4b]'>Send launch email to subscribers</h1>
                                 <p className='text-sm text-gray-500 my-1'>Owner: Marketing Team</p>
                             </div>
                         </div>
-                        <div className='rounded-2xl bg-[#F9FAFB] p-3 font-semibold mb-3'>
-                            <div>
-                                <h1 className='font-bold text-[#433d4b]'>Publish social media announcements</h1>
+                    </div>
+
+                </div>
+
+
+
+
+
+<div className='flex  items-center justify-start gap-4'>
+
+                    <div className='flex items-center justify-center '>                   
+                             <div className='whitespace-nowrap rounded-lg py-1 px-2 bg-[#F0FDFA] text-[#177D82] font-semibold mt-6 mb-14'>8:00 AM</div>
+
+                    </div>
+                    <div className='flex justify-center items-center w-full'>
+                        <div className='rounded-2xl w-full bg-[#F9FAFB] p-3 font-semibold mt-6 mb-3'>
+                            <div >
+                                <h1 className='font-bold text-[#433d4b]'>Send launch email to subscribers</h1>
                                 <p className='text-sm text-gray-500 my-1'>Owner: Marketing Team</p>
-                            </div>
-                        </div>
-                        <div className='rounded-2xl bg-[#F9FAFB] p-3 font-semibold mb-3'>
-                            <div>
-                                <h1 className='font-bold text-[#433d4b]'>Activate paid advertising campaigns</h1>
-                                <p className='text-sm text-gray-500 my-1'>Owner: Marketing Team</p>
-                            </div>
-                        </div>
-                        <div className='rounded-2xl bg-[#F9FAFB] p-3 font-semibold mb-3'>
-                            <div>
-                                <h1 className='font-bold text-[#433d4b]'>Monitor website traffic and orders</h1>
-                                <p className='text-sm text-gray-500 my-1'>Owner: Tech Team</p>
-                            </div>
-                        </div>
-                        <div className='rounded-2xl bg-[#F9FAFB] p-3 font-semibold mb-3'>
-                            <div>
-                                <h1 className='font-bold text-[#433d4b]'>Begin accepting first orders</h1>
-                                <p className='text-sm text-gray-500 my-1'>Owner: Operations Team</p>
-                            </div>
-                        </div>
-                        <div className='rounded-2xl bg-[#F9FAFB] p-3 font-semibold mb-3'>
-                            <div>
-                                <h1 className='font-bold text-[#433d4b]'>Check in with delivery drivers</h1>
-                                <p className='text-sm text-gray-500 my-1'>Owner: Operations Team</p>
-                            </div>
-                        </div>
-                        <div className='rounded-2xl bg-[#F9FAFB] p-3 font-semibold mb-3'>
-                            <div>
-                                <h1 className='font-bold text-[#433d4b]'>Respond to customer inquiries</h1>
-                                <p className='text-sm text-gray-500 my-1'>Owner: Support Team</p>
-                            </div>
-                        </div>
-                        <div className='rounded-2xl bg-[#F9FAFB] p-3 font-semibold mb-3'>
-                            <div>
-                                <h1 className='font-bold text-[#433d4b]'>Post lunch day updates</h1>
-                                <p className='text-sm text-gray-500 my-1'>Owner: Marketing Team</p>
-                            </div>
-                        </div>
-                        <div className='rounded-2xl bg-[#F9FAFB] p-3 font-semibold mb-3'>
-                            <div>
-                                <h1 className='font-bold text-[#433d4b]'>Review day metrics and feedback</h1>
-                                <p className='text-sm text-gray-500 my-1'>Owner: Leadership Team</p>
                             </div>
                         </div>
                     </div>
+
                 </div>
+
+
+
+
+
+
+
+
+
+<div className='flex  items-center justify-start gap-4'>
+
+                    <div className='flex items-center justify-center '>                   
+                             <div className='whitespace-nowrap rounded-lg py-1 px-2 bg-[#F0FDFA] text-[#177D82] font-semibold mt-6 mb-14'>8:00 AM</div>
+
+                    </div>
+                    <div className='flex justify-center items-center w-full'>
+                        <div className='rounded-2xl w-full bg-[#F9FAFB] p-3 font-semibold mt-6 mb-3'>
+                            <div >
+                                <h1 className='font-bold text-[#433d4b]'>Send launch email to subscribers</h1>
+                                <p className='text-sm text-gray-500 my-1'>Owner: Marketing Team</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+{/* <div className='flex  items-center justify-start gap-4'>
+
+                    <div className='flex items-center justify-center '>                   
+                             <div className='whitespace-nowrap rounded-lg py-1 px-2 bg-[#F0FDFA] text-[#177D82] font-semibold mt-6 mb-14'>8:00 AM</div>
+
+                    </div>
+                    <div className='flex justify-center items-center w-full'>
+                        <div className='rounded-2xl w-full bg-[#F9FAFB] p-3 font-semibold mt-6 mb-3'>
+                            <div >
+                                <h1 className='font-bold text-[#433d4b]'>Send launch email to subscribers</h1>
+                                <p className='text-sm text-gray-500 my-1'>Owner: Marketing Team</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> */}
+
+
+
+
             </div>
             <div className='p-4 rounded-2xl bg-white mt-4'>
                 <h1 className='font-bold'>First 30-Day Roadmap</h1>

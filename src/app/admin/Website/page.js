@@ -25,10 +25,10 @@ function page() {
                 </div>
             </div>
             <div className='my-6 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
-                <Websitestructurestatus title={"Total Pages"} icon={<GrDocument />} amount={"7"} />
-                <Websitestructurestatus title={"Complete"} icon={<GrDocument />} amount={"5"} />
-                <Websitestructurestatus title={"In Progress"} icon={<GrDocument />} amount={"2"} />
-                <Websitestructurestatus title={"Total Sections"} icon={<GrDocument />} amount={"28"} />
+                <Websitestructurestatus title={"Total Pages"} icon={<GrDocument />} color={"text-black"} amount={"7"} />
+                <Websitestructurestatus title={"Complete"} icon={<GrDocument />} amount={"5"} color={"text-blue-600"}/>
+                <Websitestructurestatus title={"In Progress"} icon={<GrDocument />} amount={"2"}  color={"text-orange-600"}/>
+                <Websitestructurestatus title={"Total Sections"} icon={<GrDocument />} amount={"28"} color={"text-orange-500"}/>
             </div>
             <div>
                 <Websitemaincomponent />
