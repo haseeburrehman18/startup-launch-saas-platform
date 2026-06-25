@@ -51,8 +51,8 @@ function Page() {
 
   return (
     <div className=" w-full min-h-screen relative overflow-hidden bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-900">
-    <BackgroundParticles  />
-    
+      <BackgroundParticles />
+
       <div className="absolute left-10 top-28">
         <div className="flex flex-col">
           {list.map((item, index) => {
@@ -66,32 +66,44 @@ function Page() {
                     className={`
             h-16 w-16 rounded-full flex items-center justify-center
             transition-all duration-700 shrink-0
-            ${
-              completed
-                ? "bg-green-500 text-white"
-                : active
-                  ? "bg-cyan-400 text-white shadow-[0_0_35px_#22d3ee] animate-pulse"
-                  : "bg-[#614986] text-gray-300"
-            }
+            ${completed
+                        ? "bg-green-400 text-white animate-pulse shadow-[0_0_35px_#0FD772]"
+                        : active
+                          ? "bg-cyan-400 text-white shadow-[0_0_35px_#22d3ee] animate-pulse ring-1  ring-offset-2"
+                          : "bg-[#614986] text-gray-300"
+                      }
           `}
                   >
-                    {completed ? <Check size={28} /> : item.icon}
+                    <div className="relative h-16 w-16 rounded-full flex items-center justify-center">
+                      <div
+                        className={`transition-all duration-300 ${completed ? "opacity-0 scale-50" : "opacity-100 scale-100"
+                          }`}
+                      >
+                        {item.icon}
+                      </div>
+
+                      <Check
+                        size={28}
+                        className={`absolute text-white transition-all duration-500 ease-out ${completed
+                            ? "opacity-100 scale-100 rotate-0"
+                            : "opacity-0 scale-50 -rotate-90"
+                          }`}
+                      />
+                    </div>
                   </div>
 
                   {index !== list.length - 1 && (
                     <div
-                      className={`w-1 h-8 ${
-                        completed ? "bg-green-500" : "bg-white/20"
-                      }`}
+                      className={`w-1 h-8 ${completed ? "bg-green-400" : "bg-white/20"
+                        }`}
                     />
                   )}
                 </div>
 
                 <div className="h-16 flex items-center">
                   <h3
-                    className={`font-semibold text-sm whitespace-nowrap ${
-                      completed || active ? "text-white" : "text-gray-500"
-                    }`}
+                    className={`font-semibold text-sm whitespace-nowrap ${completed || active ? "text-white" : "text-gray-500"
+                      }`}
                   >
                     {item.text}
                   </h3>
@@ -104,12 +116,12 @@ function Page() {
 
       <div className=" flex flex-col justify-center items-center p-4">
         <div className="relative flex justify-center items-center m-2">
-          
+
           <div className="absolute w-32 h-32 rounded-full border-2 bg-transparent border-[#0EB0BD] animate-ping bg-[#0EB0BD]"></div>
           <div className="w-32 h-32 bg-[#0EB0BD] flex items-center justify-center rounded-full animate-pulse"></div>
           <img
-            src="./images/mlogo.png"
-            className="h-16 w-16 z-40 absolute"
+            src={"/images/l.png"}
+            className="h-38  z-40 absolute  object-cover"
           />
         </div>
 

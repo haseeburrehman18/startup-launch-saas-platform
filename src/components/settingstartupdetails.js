@@ -7,26 +7,9 @@ import { MdOutlineSettings } from 'react-icons/md'
 
 function Settingstartupdetails() {
   return (
-    <div className='mt-6'>
-        <div className='rounded-2xl bg-white '>
-            <div className='grid grid-cols-4 border-t border-gray-200 border-b text-md'>
-                <button className='p-3 flex items-center justify-center font-bold bg-white gap-2'>
-                    <a className='font-extrabold'><GoPerson /></a>
-                    <p className='text-[#4B5C70]'>Profile</p>
-                </button>
-                <button className='p-3 flex items-center justify-center  border-b-2 border-[#1E9C90] font-bold bg-[#F0FDFA] gap-2'>
-                    <a className='text-[#179689] font-extrabold'></a>
-                    <p className='text-[#179689]'>Startup Details</p>
-                </button>
-                <button className='p-3 flex items-center justify-center font-bold bg-white gap-2'>
-                    <a></a>
-                    <p className='text-[#4B5C70]'>Billing</p>
-                </button>
-                <button className='p-3 flex items-center justify-center font-bold bg-white gap-2'>
-                    <a className='text-[#4B5C70]'><MdOutlineSettings /></a>
-                    <p className='text-[#4B5C70]'>Account</p>
-                </button>
-            </div>
+    <div className=''>
+        <div className='rounded-b-2xl bg-white '>
+            
         <div className='p-5'>
         <div className='font-bold mb-4'>
             <h1>Startup Details</h1>

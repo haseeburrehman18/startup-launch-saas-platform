@@ -3,9 +3,9 @@ import { TiTick } from 'react-icons/ti'
 
 function Starterplan() {
   return (
-    <div className='relative'>
-        <div>
-        <span className='rounded-2xl bg-[#14B8A6] top-[-13] ml-[175] flex items-center justify-center py-1 px-5 text-white absolute'>Most Popular</span>
+    <div className='relative min-h-72'>
+        <div className='flex items-center justify-center absolute top-[-15] w-full '>
+        <span className='rounded-2xl bg-[#14B8A6]  py-1 px-5 text-white '>Most Popular</span>
         </div>  
         <div className='rounded-2xl border-2 border-[#2CBFAF] p-6 bg-white shadow-lg '>
             <div className=''>
