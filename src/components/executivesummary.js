@@ -5,7 +5,7 @@ function Executivesummary() {
   return (
     <div className='p-5 rounded-xl bg-white mt-7'>
       <div className='flex gap-2'>
-        <div className='p-3 text-white rounded-xl bg-[#09B6C9]'>
+        <div className='p-3 text-white rounded-xl bg-linear-to-br from-[#15ccbd] to-[#17b7d0]'>
           <GrDocumentText />
         </div>
         <div className='text-2xl font-bold '>Executive Summary</div>

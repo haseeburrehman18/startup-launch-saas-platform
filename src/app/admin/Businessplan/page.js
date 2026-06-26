@@ -10,13 +10,13 @@ function page() {
     return (
         <div className='p-5  min-h-screen'>
             <div className='flex items-center justify-end'>
-                
+
                 <div className=''>
-                    <button className='py-3 px-5 flex justify-center items-center gap-1 rounded-xl text-white bg-[#11B8AF]'>
+                    <button className='flex items-center gap-1.5 py-3 px-6 bg-linear-to-br from-[#15ccbd] to-[#17b7d0] text-white font-semibold rounded-xl border'>
                         <div className='font-bold text-md'>
-                            <RiDownloadLine /> 
+                            <RiDownloadLine />
                         </div>
-                        <p className='font-semibold text-sm text-nowrap'>
+                        <p className='font-semibold text-nowrap'>
                             Download PDF
                         </p>
                     </button>
@@ -69,7 +69,7 @@ function page() {
                     <div className='grid grid-rows-4 gap-6 mt-4 '>
                         <div className='p-3 bg-[#F9FAFB] rounded-2xl flex '>
                             <div className='p-3'>
-                                <p className='bg-[#0DB7BC] h-9 p-2.5 rounded-md w-9 text-white text-md font-bold'><HiCheck /></p>
+                                <p className='bg-linear-to-br from-[#15ccbd] to-[#17b7d0] h-9 p-2.5 rounded-md w-9 text-white text-md font-bold'><HiCheck /></p>
                             </div>
                             <div className='mt-2'>
                                 <h1 className='font-bold my-1'>Electric Vehicle Fleet</h1>
@@ -78,7 +78,7 @@ function page() {
                         </div>
                         <div className='p-3 bg-[#F9FAFB] rounded-2xl flex '>
                             <div className='p-3'>
-                                <p className='bg-[#0DB7BC] h-9 p-2.5 rounded-md w-9 text-white text-md font-bold'><HiCheck /></p>
+                                <p className='bg-linear-to-br from-[#15ccbd] to-[#17b7d0] h-9 p-2.5 rounded-md w-9 text-white text-md font-bold'><HiCheck /></p>
                             </div>
                             <div className='mt-2'>
                                 <h1 className='font-bold my-1'>Biodegrable Pakaging </h1>
@@ -87,7 +87,7 @@ function page() {
                         </div>
                         <div className='p-3 bg-[#F9FAFB] rounded-2xl flex'>
                             <div className='p-3'>
-                                <p className='bg-[#0DB7BC] h-9 p-2.5 rounded-md w-9 text-white text-md font-bold'><HiCheck /></p>
+                                <p className='bg-linear-to-br from-[#15ccbd] to-[#17b7d0] h-9 p-2.5 rounded-md w-9 text-white text-md font-bold'><HiCheck /></p>
                             </div>
                             <div className='mt-2'>
                                 <h1 className='font-bold my-1'>Carbon Tracking</h1>
@@ -97,7 +97,7 @@ function page() {
 
                         <div className='p-3 bg-[#F9FAFB] rounded-2xl flex '>
                             <div className='p-3'>
-                                <p className='bg-[#0DB7BC] h-9 p-2.5 rounded-md w-9 text-white text-md font-bold'><HiCheck /></p>
+                                <p className='bg-linear-to-br from-[#15ccbd] to-[#17b7d0] h-9 p-2.5 rounded-md w-9 text-white text-md font-bold'><HiCheck /></p>
                             </div>
                             <div className='mt-2'>
                                 <h1 className='font-bold my-1'>Route Optimization</h1>

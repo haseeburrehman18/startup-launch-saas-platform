@@ -7,7 +7,7 @@ function Footer() {
                 <div>
                     <div className='flex items-center gap-2'>
                         <img className='w-1/7' src={"/images/l.png"}></img>
-                        <h1 className='font-bold'>Solve Sphere</h1>
+                        <h1 className='font-bold'>Xorvia</h1>
 
                     </div>
                     <p className='text-gray-500 text-sm font-semibold my-1.5'>Al-powered platform to build your entire

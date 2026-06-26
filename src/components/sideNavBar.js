@@ -57,7 +57,7 @@ function SideNavBar({ setnavOpen, nav }) {
         {nav ? (
           <>
             <h1 className="text-3xl text-linear-to-r from-[#15ccbd] to-[#17b7d0] font-bold transition-all duration-500 ease-in-out  ">
-              Solve-Sphere
+              Xorvia
             </h1>
             <RiMenuFoldLine
               className="text-black dark:text-white text-xl  cursor-pointer"
@@ -110,7 +110,7 @@ function SideNavBar({ setnavOpen, nav }) {
         </Link>
 
         <Link
-          href={"/admin/set-in"}
+          href={"/admin/Settings()"}
 
           className="flex justify-start gap-4 font-semibold text-lg transition-all duration-200 ease-in h-15 ps-4 pe-4 py-4 items-center hover:bg-linear-to-r from-[#15ccbd] to-[#17b7d0] rounded-xl mr-2 hover:border-r-4  hover:text-white "
         >

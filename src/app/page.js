@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 
 /* ─── DESIGN TOKENS ────────────────────────────────────────────── */
 const C = {
@@ -262,16 +263,18 @@ function Hero() {
           </p>
 
           <div className="fade-up delay-4" style={{ display: "flex", gap: 14, flexWrap: "wrap", marginBottom: 44 }}>
-            <button style={{
-              height: 52, padding: "0 32px", borderRadius: 12,
+            <Link href="/admin/Overview" style={{
+              display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+              height: 52, padding: '0 32px', borderRadius: 12,
               background: `linear-gradient(135deg, ${C.accent}, #8B6AFF)`,
-              color: "#fff", fontSize: 15, fontWeight: 600,
+              color: '#fff', fontSize: 15, fontWeight: 600,
               boxShadow: `0 6px 32px ${C.glow}`,
-              transition: "transform 0.2s, box-shadow 0.2s",
+              transition: 'transform 0.2s, box-shadow 0.2s',
+              textDecoration: 'none'
             }}
-              onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 10px 40px rgba(99,120,255,0.4)"; }}
-              onMouseLeave={e => { e.currentTarget.style.transform = ""; e.currentTarget.style.boxShadow = `0 6px 32px ${C.glow}`; }}
-            >Start building free →</button>
+              onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 40px rgba(99,120,255,0.4)'; }}
+              onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = `0 6px 32px ${C.glow}`; }}
+            >Start building free →</Link>
 
             <button style={{
               height: 52, padding: "0 28px", borderRadius: 12,

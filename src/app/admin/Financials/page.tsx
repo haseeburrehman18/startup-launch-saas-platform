@@ -143,11 +143,11 @@ function page() {
     <div className='min-h-screen p-5'>
       <div className='flex items-center justify-end'>
         <div className=''>
-          <button className='py-3 px-5 flex justify-center gap-2 items-center rounded-xl text-white bg-[#11B8AF]'>
+          <button className='flex items-center gap-1.5 py-3 px-6 bg-linear-to-br from-[#15ccbd] to-[#17b7d0] text-white font-semibold rounded-xl border'>
             <div className='font-bold text-md'>
               <RiDownloadLine />
             </div>
-            <p className='font-semibold text-sm text-nowrap'>
+            <p className='font-semibold text-nowrap'>
               Export Financials
             </p>
           </button>

@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/card";
 import React, { useState } from "react";
 import { FaDownload } from "react-icons/fa6";
-import { RiRefreshLine } from "react-icons/ri";
+import { RiDownloadLine, RiRefreshLine } from "react-icons/ri";
 import { IoCheckmarkCircle } from "react-icons/io5";
 import { FiEdit3 } from "react-icons/fi";
 import { RiLeafLine } from "react-icons/ri";
@@ -69,7 +69,7 @@ function Page() {
       <div className="flex justify-end items-center mb-8 flex-wrap">
         <div className="flex md:block justify-end items-end mt-7 sm:mt-0 w-full md:w-auto  ">
           <button className="cursor-pointer  bg-linear-to-r p-4 gap-3 from-teal-500 to-cyan-500 rounded-2xl font-semibold text-white flex justify-center items-center">
-            <FaDownload />
+            <RiDownloadLine />
             Download Brand kit
           </button>
         </div>
@@ -124,7 +124,7 @@ function Page() {
           </CardTitle>
         </CardHeader>
         <CardContent className={"grid  sm:grid-cols-2 gap-4 "}>
-          <Card className={`p-6 bg-gradient-to-br from-gray-50 to-white    `}>
+          <Card className={`p-6 bg-linear-to-br from-gray-50 to-white    `}>
             <CardHeader>
               <CardTitle className={"text-xl font-bold text-gray-900 mb-2 "}>
                 Light Background
@@ -140,7 +140,7 @@ function Page() {
           </Card>
 
           <Card
-            className={`p-6 bg-gradient-to-br from-gray-800 to-gray-900   `}
+            className={`p-6 bg-linear-to-br from-gray-800 to-gray-900   `}
           >
             <CardHeader>
               <CardTitle className={"text-xl font-semibold text-white mb-2 "}>
@@ -201,7 +201,7 @@ function Page() {
           {BrandVioce.map((item, idx) => (
             <div key={idx} className=" py-6 px-3 sm:p-6 bg-gray-50 rounded-xl text-center">
               <div
-                className={`w-16 h-16 text-white text-2xl bg-gradient-to-br ${item.color}  to-white rounded-full flex items-center justify-center mx-auto mb-4`}
+                className={`w-16 h-16 text-white text-2xl bg-linear-to-br ${item.color}  to-white rounded-full flex items-center justify-center mx-auto mb-4`}
               >
                 {item.icon}
               </div>

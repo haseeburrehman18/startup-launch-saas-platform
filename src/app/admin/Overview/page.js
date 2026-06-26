@@ -6,8 +6,10 @@ import { BiSolidFilePdf } from 'react-icons/bi'
 import { BsArrowRepeat, BsReverseLayoutTextWindowReverse } from 'react-icons/bs'
 import { TbSpeakerphone } from 'react-icons/tb'
 import { HiOutlineRocketLaunch } from 'react-icons/hi2'
-import { MdOutlineArrowForward } from 'react-icons/md'
+import { MdOutlineArrowForward, MdOutlineColorLens } from 'react-icons/md'
 import { FiCheck } from 'react-icons/fi'
+import { LuCircleDollarSign, LuPanelsTopLeft, LuPanelTop } from 'react-icons/lu'
+import { IoArrowUp } from 'react-icons/io5'
 
 function page() {
   return (
@@ -19,10 +21,10 @@ function page() {
                 Here's your startup progress Overview.
             </div>
             <div className='grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 pb-5'>
-                <Overviewcard icon={<FiCheck/>} status={"High"} percentage={"92%"} description={"Validation Score"}/>
-                <Overviewcard icon={<FiCheck/>} status={"High"} percentage={"$125K"} description={"Year 1 Revenue"}/>
-                <Overviewcard icon={<FiCheck/>} status={"Ready"} percentage={"Complete"} description={"Brand Identity"}/>
-                <Overviewcard icon={<FiCheck/>} status={"High"} percentage={"Website"} description={"Structure Ready"}/>
+                <Overviewcard icon={<FiCheck/>} status={"High"} percentage={"92%"} description={"Validation Score"} color={"text-[#0EB7B8]"}/>
+                <Overviewcard icon={<LuCircleDollarSign/>} status={<IoArrowUp />} percentage={"$125K"} description={"Year 1 Revenue"} bgcolor={"bg-gradient-to-linear from-[#39E014] to-[#20AB3E]"} color={"text-[#20AB3E]"}/>
+                <Overviewcard icon={<MdOutlineColorLens />} status={"Ready"} percentage={"Complete"} description={"Brand Identity"} bgcolor={"bg-gradient-to-linear from-[#8427E6] to-[#E627CD]"} color={"text-[#20AB3E]"}/>
+                <Overviewcard icon={<LuPanelsTopLeft />} status={"7 pages"} percentage={"Website"} description={"Structure Ready"} bgcolor={"bg-gradient-to-linear from-[#E37F30] to-[#BF661F]"} color={"text-[#4B6078]"}/>
             </div>
             <div className='flex gap-6'>
                 <div className='p-4 lg:w-[65%] sm:w-[55%] rounded-2xl h-auto bg-white'>
@@ -60,7 +62,7 @@ function page() {
                 <div className='p-4 lg:w-[35%] sm:w-[45%] rounded-2xl h-auto bg-white'>
                     <div className='font-bold text-xl pb-5'>Quick Actions</div>
                     <div className='grid sm:grid-rows-1 gap-3.5'>
-                        <div className=' shadow-md flex justify-between bg-linear-to-r from-[#61b989] to-[#09B6C9] rounded-2xl p-4 text-white items-center'>
+                        <div className=' shadow-md flex justify-between bg-linear-to-br from-[#15ccbd] to-[#17b7d0] rounded-2xl p-4 text-white items-center'>
                             <div className='font-semibold'>Download Business Plan</div>
                             <div><RiDownloadLine /></div>
                         </div>
@@ -195,16 +197,16 @@ function page() {
                     <p className='font-bold text-[17px]'>Recommended Next Steps</p>
                     <div className='flex'>
                         <div className='flex flex-col gap-13 mx-4 pt-9 w-[8%]'>
-                            <p className='bg-[#0DB7BC] p-3 rounded-md w-9.5 text-white text-md font-bold'>
+                            <p className='bg-linear-to-br from-[#15ccbd] to-[#17b7d0] p-3 rounded-md w-9.5 text-white text-md font-bold'>
                                 <BsReverseLayoutTextWindowReverse />
                             </p>
-                            <div className='bg-[#0DB7BC] p-3 rounded-md w-9.5  text-white text-md font-bold'>
+                            <div className='bg-linear-to-br from-[#15ccbd] to-[#17b7d0] p-3 rounded-md w-9.5  text-white text-md font-bold'>
                                 <TbSpeakerphone />
                             </div>
-                            <div className='bg-[#0DB7BC] p-3 rounded-md w-9.5 text-white text-md font-bold'>
+                            <div className='bg-linear-to-br from-[#15ccbd] to-[#17b7d0] p-3 rounded-md w-9.5 text-white text-md font-bold'>
                                 <HiOutlineRocketLaunch />
                             </div>
-                            <div className='bg-[#0DB7BC] p-3 rounded-md w-9.5 text-white text-md font-bold'>
+                            <div className='bg-linear-to-br from-[#15ccbd] to-[#17b7d0] p-3 rounded-md w-9.5 text-white text-md font-bold'>
                                 <RiTeamLine />
                             </div>
                         </div>
