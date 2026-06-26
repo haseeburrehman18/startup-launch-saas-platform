@@ -25,10 +25,6 @@ let [tab,setTab]=useState([
   return (
     <div className='p-5 min-h-screen'>
         <div>
-            <h1 className='text-3xl font-bold'>Settings</h1>
-            <p className='my-2 text-sm text-gray-500'>Manage your account and startup preferences</p>
-        </div>
-        <div>
 
           <div className='grid grid-cols-4 border-t border-gray-200 bg border-b bg-white text-md rounded-t-2xl overflow-hidden' >
 {
