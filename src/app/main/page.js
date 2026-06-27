@@ -16,6 +16,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select"
+import Link from 'next/link'
 
 function page() {
     return (
@@ -177,13 +178,13 @@ function page() {
                                 </SelectContent>
                             </Select>                                                </div>
                     </div>
-                    <div className='flex justify-between items-center p-5 shadow-lg bg-white w-full'>
+                    <Link href="/processing" className='flex justify-between items-center p-5 shadow-lg bg-white w-full'>
                         <div className='text-sm'>Save as draft</div>
                         <div className='rounded-xl py-3.5 px-8 bg-linear-to-br from-[#15ccbd] to-[#17b7d0] flex gap-2 items-center text-white font-semiboldbold'>
                             <p>Build My Business</p>
                             <p><MdOutlineArrowForward /></p>
                         </div>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>

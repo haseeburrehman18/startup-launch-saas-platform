@@ -3,7 +3,7 @@ import { FiCheck } from 'react-icons/fi';
 import { TiTickOutline } from "react-icons/ti";
 function Overviewcard({icon,status,percentage,description,bgcolor,color}) {
   return (
-    <div className='h-auto w-auto bg-white rounded-2xl p-4'>
+    <div className='h-auto w-auto bg-white rounded-2xl shadow-lg p-4'>
         <div className='flex justify-between'>
             <div className={`bg-linear-to-br from-[#15ccbd] to-[#17b7d0] text-white rounded-xl p-3 ${bgcolor}`}>
                 {icon}

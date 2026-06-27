@@ -10,6 +10,7 @@ import { MdOutlineArrowForward, MdOutlineColorLens } from 'react-icons/md'
 import { FiCheck } from 'react-icons/fi'
 import { LuCircleDollarSign, LuPanelsTopLeft, LuPanelTop } from 'react-icons/lu'
 import { IoArrowUp } from 'react-icons/io5'
+import OverviewProgress from '../../../components/overviewProgress'
 
 function page() {
   return (
@@ -80,125 +81,20 @@ function page() {
             <div className='flex sm:flex-col md:flex-row gap-6 pt-6 '>
                 <div className='p-4 rounded-2xl bg-white  sm:w-full md:w-[50%] lg:w-[50%]'>
                     <p className='font-bold text-[17px]'>Completion Progress</p>
-                    <div>
-                        <div className='flex justify-between pt-2'>
-                            <h1 className='text-gray-500 text-sm mt-2.5'>
-                                Idea Validation
-                            </h1>
-                            <h1 className='text-black text-sm font-semibold mt-2.5'>
-                                100%
-                            </h1>
-                        </div>
-                        <div className='w-full mt-2'>
-                            <div className='w-full h-2 bg-gray-200 rounded-2xl'>
-                                <div className='h-2 rounded-2xl bg-[#0DB7BC]'>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div className='flex justify-between pt-2'>
-                            <h1 className='text-gray-500 text-sm mt-2.5'>
-                                Business Plan
-                            </h1>
-                            <h1 className='text-black text-sm font-semibold mt-2.5'>
-                                100%
-                            </h1>
-                        </div>
-                        <div className='w-full mt-2'>
-                            <div className='w-full h-2 bg-gray-200 rounded-2xl'>
-                                <div className='h-2 rounded-2xl bg-[#0DB7BC]'>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div className='flex justify-between pt-2'>
-                            <h1 className='text-gray-500 text-sm mt-2.5'>
-                                Brand & Design
-                            </h1>
-                            <h1 className='text-black text-sm font-semibold mt-2.5'>
-                                100%
-                            </h1>
-                        </div>
-                        <div className='w-full mt-2'>
-                            <div className='w-full h-2 bg-gray-200 rounded-2xl'>
-                                <div className='h-2 rounded-2xl bg-[#0DB7BC]'>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                    <div>
-                        <div className='flex justify-between pt-2'>
-                            <h1 className='text-gray-500 text-sm mt-2.5'>
-                                Financial Plan
-                            </h1>
-                            <h1 className='text-black text-sm font-semibold mt-2.5'>
-                                100%
-                            </h1>
-                        </div>
-                        <div className='w-full mt-2'>
-                            <div className='w-full h-2 bg-gray-200 rounded-2xl'>
-                                <div className='h-2 rounded-2xl bg-[#0DB7BC]'>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div className='flex justify-between pt-2'>
-                            <h1 className='text-gray-500 text-sm mt-2.5'>
-                                Website Structure
-                            </h1>
-                            <h1 className='text-black text-sm font-semibold mt-2.5'>
-                                85%
-                            </h1>
-                        </div>
-                        <div className='w-full mt-2'>
-                            <div className='w-[85%] h-2 bg-gray-200 rounded-2xl'>
-                                <div className='h-2 rounded-2xl bg-[#F45E2B]'>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div className='flex justify-between pt-2'>
-                            <h1 className='text-gray-500 text-sm mt-2.5'>
-                                Marketing Strategy
-                            </h1>
-                            <h1 className='text-black text-sm font-semibold mt-2.5'>
-                                70%
-                            </h1>
-                        </div>
-                        <div className='w-full mt-2'>
-                            <div className='w-full h-2 bg-gray-200 rounded-2xl'>
-                                <div className='h-2 rounded-2xl bg-[#F45E2B]'>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div className='flex justify-between pt-2'>
-                            <h1 className='text-gray-500 text-sm mt-2.5'>
-                                Launch Roadmap
-                            </h1>
-                            <h1 className='text-black text-sm font-semibold mt-2.5'>
-                                60%
-                            </h1>
-                        </div>
-                        <div className='w-full mt-2'>
-                            <div className='w-full h-2 bg-gray-200 rounded-2xl'>
-                                <div className='h-2 rounded-2xl bg-[#F45E2B]'>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <OverviewProgress name="Idea Validation" per={100}/>
+                    <OverviewProgress name="Business Plan" per={100}/>
+                    <OverviewProgress name="Brand & Design" per={100}/>
+                    <OverviewProgress name="Financials Plan" per={100}/>
+                    <OverviewProgress name="Web Structure" per={65}/>
+                    <OverviewProgress name="Marketing Strategy" per={30}/>
+                    <OverviewProgress name="Launch Roadmap" per={50}/>
                 </div>
-                <div className='p-4 rounded-2xl bg-white  sm:w-full md:w-[50%] lg:w-[50%]'>
+                <div className='p-4 rounded-2xl shadow-lg bg-white  sm:w-full md:w-[50%] lg:w-[50%]'>
                     <p className='font-bold text-[17px]'>Recommended Next Steps</p>
                     <div className='flex'>
                         <div className='flex flex-col gap-13 mx-4 pt-9 w-[8%]'>
                             <p className='bg-linear-to-br from-[#15ccbd] to-[#17b7d0] p-3 rounded-md w-9.5 text-white text-md font-bold'>
-                                <BsReverseLayoutTextWindowReverse />
+                                <LuPanelsTopLeft />
                             </p>
                             <div className='bg-linear-to-br from-[#15ccbd] to-[#17b7d0] p-3 rounded-md w-9.5  text-white text-md font-bold'>
                                 <TbSpeakerphone />

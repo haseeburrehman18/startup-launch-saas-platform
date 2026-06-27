@@ -263,7 +263,7 @@ function Hero() {
           </p>
 
           <div className="fade-up delay-4" style={{ display: "flex", gap: 14, flexWrap: "wrap", marginBottom: 44 }}>
-            <Link href="/admin/Overview" style={{
+            <Link href="/main" style={{
               display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
               height: 52, padding: '0 32px', borderRadius: 12,
               background: `linear-gradient(135deg, ${C.accent}, #8B6AFF)`,

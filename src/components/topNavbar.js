@@ -24,7 +24,7 @@ function TopNavbar({ tooglenav }) {
   const pageTitle =
     formattedSegement[formattedSegement.length - 1] || "Dashboard";
   return (
-    <nav className="w-full h-24 border border-gray-200 dark:bg-gray-800 dark:border-gray-700    bg-white ">
+    <nav className=" h-24 border border-gray-200 dark:bg-gray-800 dark:border-gray-700  w-full  sticky top-0 z-50  bg-white ">
       <div className="text-gray-400 text-xs py-2 px-5 flex gap-1 justify-start  items-center font-sans">
         <p>Home</p>
         {formattedSegement.map((item, idx) => (

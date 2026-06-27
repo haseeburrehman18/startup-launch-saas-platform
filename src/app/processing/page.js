@@ -15,6 +15,7 @@ import {
 import React, { useEffect, useState } from "react";
 import CircularProgress from "../../components/circularprogress";
 import BackgroundParticles from "../../components/BackgroundParticles";
+import { useRouter } from "next/navigation";
 
 
 function Page() {
@@ -29,14 +30,17 @@ function Page() {
     { text: "Planning Marketing", icon: <Megaphone /> },
     { text: "Preparing Growth Strategy", icon: <LucideRocket /> },
   ];
+  const router =useRouter()
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCounter((prev) => {
         if (prev >= 100) {
           clearInterval(timer);
+          router.push('/admin/Overview')
           return 100;
         }
+       
         return prev + 1;
       });
     }, 150);
@@ -50,7 +54,7 @@ function Page() {
   );
 
   return (
-    <div className=" w-full min-h-screen relative overflow-hidden bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-900">
+    <div className=" w-full min-h-screen relative overflow-hidden bg-linear-to-br from-indigo-950 via-purple-900 to-indigo-900">
       <BackgroundParticles />
 
       <div className="absolute left-10 top-28">
@@ -117,7 +121,7 @@ function Page() {
       <div className=" flex flex-col justify-center items-center p-4">
         <div className="relative flex justify-center items-center m-2">
 
-          <div className="absolute w-32 h-32 rounded-full border-2 bg-transparent border-[#0EB0BD] animate-ping bg-[#0EB0BD]"></div>
+          <div className="absolute w-32 h-32 rounded-full border-2 bg-transparent border-[#0EB0BD] animate-ping"></div>
           <div className="w-32 h-32 bg-[#0EB0BD] flex items-center justify-center rounded-full animate-pulse"></div>
           <img
             src={"/images/l.png"}
