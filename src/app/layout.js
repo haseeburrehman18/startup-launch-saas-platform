@@ -1,31 +1,15 @@
 import "./globals.css";
 
-import Footer from "../components/footer";
-import { Analytics } from "@vercel/analytics/next";
-
 export const metadata = {
-  title: "Xorvia",
-  description: "Build Your Startup From Just an Idea",
-  icons: {
-    icon: "/images/favicon.png",
-    shortcut: "/images/favicon.png",
-    apple: "/images/favicon.svg",
-  },
+  title: "Xorvia — Build your entire startup from just an idea",
+  description: "AI-native platform that turns a single idea into a validated plan, brand, financials, website, and launch roadmap.",
+  icons: { icon: "/images/logo.png" },
 };
 
-export default function RootLayout({
-  children,
-}
-)
- {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className=" bg-gray-100 antialiased [--font-geist-sans:Arial,Helvetica,sans-serif] [--font-geist-mono:'Courier_New',monospace]">
-        {children}
-        <Footer />
-        <Analytics />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
