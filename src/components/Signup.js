@@ -82,7 +82,7 @@ export function Signup() {
         </Button>
         <div className="flex gap-1">
             <p className="text-gray-500">Already have an account?</p>
-            <a href="/autherization/Login" className="text-[#2b8f77] font-bold">Sign in</a>
+            <a href="/auth/Login" className="text-[#2b8f77] font-bold">Sign in</a>
         </div>
       </CardFooter>
     </Card>

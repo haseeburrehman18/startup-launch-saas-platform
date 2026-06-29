@@ -21,13 +21,13 @@ function page() {
             <div className=' py-2 pb-5 text-sm text-gray-500'>
                 Here's your startup progress Overview.
             </div>
-            <div className='grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 pb-5'>
+            <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 pb-5'>
                 <Overviewcard icon={<FiCheck/>} status={"High"} percentage={"92%"} description={"Validation Score"} color={"text-[#0EB7B8]"}/>
                 <Overviewcard icon={<LuCircleDollarSign/>} status={<IoArrowUp />} percentage={"$125K"} description={"Year 1 Revenue"} bgcolor={"bg-gradient-to-linear from-[#39E014] to-[#20AB3E]"} color={"text-[#20AB3E]"}/>
                 <Overviewcard icon={<MdOutlineColorLens />} status={"Ready"} percentage={"Complete"} description={"Brand Identity"} bgcolor={"bg-gradient-to-linear from-[#8427E6] to-[#E627CD]"} color={"text-[#20AB3E]"}/>
                 <Overviewcard icon={<LuPanelsTopLeft />} status={"7 pages"} percentage={"Website"} description={"Structure Ready"} bgcolor={"bg-gradient-to-linear from-[#E37F30] to-[#BF661F]"} color={"text-[#4B6078]"}/>
             </div>
-            <div className='flex gap-6'>
+            <div className='flex gap-6 md:flex-row flex-col'>
                 <div className='p-4 lg:w-[65%] sm:w-[55%] rounded-2xl h-auto bg-white'>
                     <div className='flex justify-between'>
                         <p className='font-bold text-xl'>Your Startup: EcoDelivery</p>
@@ -78,7 +78,7 @@ function page() {
                     </div>
                 </div>
             </div>
-            <div className='flex sm:flex-col md:flex-row gap-6 pt-6 '>
+            <div className='flex md:flex-row flex-col gap-6 pt-6 '>
                 <div className='p-4 rounded-2xl bg-white  sm:w-full md:w-[50%] lg:w-[50%]'>
                     <p className='font-bold text-[17px]'>Completion Progress</p>
                     <OverviewProgress name="Idea Validation" per={100}/>

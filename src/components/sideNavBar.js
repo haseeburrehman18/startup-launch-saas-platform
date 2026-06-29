@@ -60,7 +60,7 @@ function SideNavBar({ setnavOpen, nav }) {
     <aside
       className={`
     transition-all duration-500 ease-in-out bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700 h-screen overflow-hidden z-50
-    fixed top-0 left-0 flex flex-col
+    fixed left-0 top-0 flex flex-col
     lg:sticky lg:top-0
     ${nav ? "w-[70%] sm:w-[50%] md:w-[40%] lg:w-[16.6%]" : "w-0 lg:w-[5%]"}
     ${nav ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
@@ -88,7 +88,7 @@ function SideNavBar({ setnavOpen, nav }) {
       <hr className="text-gray-200 my-4 shrink-0"></hr>
 
       {/* Menu — scrolls internally only if items overflow */}
-      <div className="text-gray-600 dark:text-gray-400 ps-2 pt-2 flex-1 overflow-y-auto">
+      <div className="text-gray-600 dark:text-gray-400 ps-2 pt-2 flex-1 ">
         {menu.map((m, idx) => (
           <Link
             href={m.page}
