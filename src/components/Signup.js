@@ -1,4 +1,3 @@
-"use client"
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -16,18 +15,18 @@ import { VscGithub } from "react-icons/vsc";
 
 export function Signup() {
   return (
-    <div className="flex justify-center p-45 h-auto ">
-    <Card className="w-full max-w-sm">
+    <div className="flex justify-center  pb-45 h-auto lg:min-h-screen  drop-shadow-2xl">
+    <Card className="sm:w-10/12 md:max-w-sm ">
       <CardHeader>
         <CardTitle>
             <div className="text-3xl flex justify-center font-bold">
-                Welcome Back
+                Create Your Account
             </div>
         </CardTitle>
         <CardDescription>
             <div className="flex justify-center">
                 <p className="text-gray-500 text-[16px]">
-                    Sign in to continue building your startup
+                    Start building your startup today
                 </p>
             </div>
         </CardDescription>
@@ -51,6 +50,15 @@ export function Signup() {
         <form>
           <div className="flex flex-col gap-6">
             <div className="grid gap-2">
+              <Label htmlFor="email">Name</Label>
+              <Input
+                id="name"
+                type="text"
+                placeholder=""
+                required
+              />
+            </div>
+            <div className="grid gap-2">
               <Label htmlFor="email">Email address</Label>
               <Input
                 id="email"
@@ -64,31 +72,17 @@ export function Signup() {
                 <Label htmlFor="password">Password</Label>
               </div>
               <Input id="password" type="password" required />
-              <div className="flex justify-between">
-              <div className='flex items-center'>
-                <input id='checkbox' type="checkbox" className='h-4 w-4' />
-                <label htmlFor="checkbox" className="pl-2 text-gray-500 text-xs">Remember me</label>
-              </div>
-              <div>
-                <a
-                  href="#"
-                  className="ml-auto inline-block text-sm underline-offset-4 hover:underline text-[#20836c]"
-                >
-                  Forgot your password?
-                </a>
-                </div>
-            </div>
             </div>
           </div>
         </form>
       </CardContent>
       <CardFooter className="flex-col gap-2">
         <Button type="submit" className="w-full bg-[#3d98a1] rounded-2xl text-md font-bold">
-          Sign in
+          Create Account
         </Button>
         <div className="flex gap-1">
-            <p className="text-gray-500">Don't have an account?</p>
-            <button className="text-[#2b8f77] font-bold">Sign up</button>
+            <p className="text-gray-500">Already have an account?</p>
+            <a href="/autherization/Login" className="text-[#2b8f77] font-bold">Sign in</a>
         </div>
       </CardFooter>
     </Card>

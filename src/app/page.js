@@ -357,7 +357,7 @@ export default function Page() {
     <>
       {/* ───────── PRELOADER ───────── */}
       {showPre && (
-        <div className="preloader" aria-hidden="true">
+        <div className="jsx-bcb5ec0fa18476d4 preloader" aria-hidden="true">
           <div className="pre-inner">
             <span className="pre-word">XORVIA</span>
             <span className="pre-bar">
@@ -380,8 +380,8 @@ export default function Page() {
           <a href="#faq">FAQ</a>
         </nav>
         <div className="nav-cta">
-          <a href="#" className="btn btn-ghost btn-sm">Sign in</a>
-          <a href="#" className="btn btn-fill btn-sm">Start free</a>
+          <a href="/autherization/Login" className="btn btn-ghost btn-sm">Sign in</a>
+          <a href="/autherization/Signup" className="btn btn-fill btn-sm">Start free</a>
         </div>
         <button
           className="hamburger"
@@ -441,7 +441,7 @@ export default function Page() {
               everything you need to go live.
             </p>
             <div className="hero-actions" data-hero>
-              <a href="#" className="btn btn-fill">Build my startup</a>
+              <a href="/main" className="btn btn-fill">Build my startup</a>
               <a href="#how" className="btn btn-ghost">See how it works →</a>
             </div>
             <p className="hero-note" data-hero>
@@ -651,7 +651,7 @@ export default function Page() {
           <a href="#">Contact</a>
         </nav>
         <span className="foot-copy label">
-          © 2025 Xorvia. All rights reserved.
+          © 2026 Xorvia. All rights reserved.
         </span>
       </footer>
 
@@ -1690,10 +1690,10 @@ const PLANS = [
     ],
   },
   {
-    name: 'Starter',
+    name: 'Plus',
     desc: 'For serious founders ready to launch.',
-    price: '$49',
-    cta: 'Start free trial',
+    price: '$39',
+    cta: 'Upgrade to Plus',
     featured: true,
     feats: [
       'Everything in Free, plus:',
@@ -1708,8 +1708,8 @@ const PLANS = [
   {
     name: 'Pro',
     desc: 'For agencies and serial entrepreneurs.',
-    price: '$149',
-    cta: 'Start free trial',
+    price: '$99',
+    cta: 'Upgrade to Pro',
     featured: false,
     feats: [
       'Everything in Starter, plus:',
