@@ -582,7 +582,6 @@ export default function LoginPage() {
             <div className="xv-card-glow" aria-hidden />
 
             {/* Version badge */}
-            <div className="xv-corner-badge" aria-hidden>v2.0</div>
 
             {success ? (
               /* ── Success state ── */
@@ -704,7 +703,7 @@ export default function LoginPage() {
           {!success && (
             <p className="xv-footer">
               Don&apos;t have an account?{" "}
-              <a href="/auth/signup">Create one free</a>
+              <a href="/auth/Signup">Create one free</a>
             </p>
           )}
 

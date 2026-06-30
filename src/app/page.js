@@ -484,7 +484,7 @@ export default function Page() {
           </a>
         ))}
         <a
-          href="#"
+          href="/auth/Signup"
           className="btn btn-fill inline-flex items-center justify-center font-[Inter,sans-serif] font-semibold text-[0.95rem] py-[0.85rem] px-[1.8rem] rounded-full cursor-pointer transition-all duration-[350ms] ease-[ease] border border-transparent text-white bg-[#4a6cf7] relative overflow-hidden whitespace-nowrap shadow-[0_6px_24px_rgba(74,108,247,0.35)] hover:bg-[#5d7bff] hover:shadow-[0_8px_32px_rgba(74,108,247,0.55)]"
           onClick={() => setMenuOpen(false)}
         >
